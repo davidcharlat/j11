@@ -5,7 +5,7 @@ void	ft_list_foreach_if
 {
 	while (begin_list)
 	{
-		if (cmp(begin_list->data, data_ref) == cmp(data_ref, data_ref))
+		if (!cmp(begin_list->data, data_ref))
 			f(begin_list->data);
 		begin_list = begin_list->next;
 	}
